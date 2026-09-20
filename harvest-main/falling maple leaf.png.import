@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cujvattum31e5"
-path="res://.godot/imported/topdown_modern_food_drink_mega_clean_tilesheet.png-e5c22ecc76700006b450c1ac67508e7a.ctex"
+uid="uid://cdv74t3s3svc2"
+path="res://.godot/imported/falling maple leaf.png-e7ca842eede7f4397bda949d9e3bf9a2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://harvest-main/topdown_modern_food_drink_mega_clean_tilesheet.png"
-dest_files=["res://.godot/imported/topdown_modern_food_drink_mega_clean_tilesheet.png-e5c22ecc76700006b450c1ac67508e7a.ctex"]
+source_file="res://harvest-main/falling maple leaf.png"
+dest_files=["res://.godot/imported/falling maple leaf.png-e7ca842eede7f4397bda949d9e3bf9a2.ctex"]
 
 [params]
 
