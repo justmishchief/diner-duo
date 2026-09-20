@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://c3ctg0lhdt3hj"]
 
-[ext_resource type="PackedScene" uid="uid://wwypcxn7a7vs" path="res://maincharacter.tscn" id="1_80nbo"]
-[ext_resource type="Texture2D" uid="uid://cujvattum31e5" path="res://topdown_modern_food_drink_mega_clean_tilesheet.png" id="1_e2o6t"]
+[ext_resource type="PackedScene" uid="uid://wwypcxn7a7vs" path="res://harvest-main/maincharacter.tscn" id="1_80nbo"]
+[ext_resource type="Texture2D" uid="uid://cujvattum31e5" path="res://harvest-main/topdown_modern_food_drink_mega_clean_tilesheet.png" id="1_e2o6t"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_feb5d"]
 texture = ExtResource("1_e2o6t")
