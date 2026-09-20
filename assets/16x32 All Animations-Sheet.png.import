@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b2g6jgj1ldmto"
-path="res://.godot/imported/topdown_modern_food_drink_mega_clean_tilesheet.png-0c559584649da307da062a75f6bd7595.ctex"
+uid="uid://bkalwaf45k388"
+path="res://.godot/imported/16x32 All Animations-Sheet.png-cba3f6c8d257eb73a73356d4c6bce492.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/topdown_modern_food_drink_mega_clean_tilesheet.png"
-dest_files=["res://.godot/imported/topdown_modern_food_drink_mega_clean_tilesheet.png-0c559584649da307da062a75f6bd7595.ctex"]
+source_file="res://assets/16x32 All Animations-Sheet.png"
+dest_files=["res://.godot/imported/16x32 All Animations-Sheet.png-cba3f6c8d257eb73a73356d4c6bce492.ctex"]
 
 [params]
 
