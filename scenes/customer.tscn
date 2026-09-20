@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://doh2wa2qb2s0c"]
+
+[ext_resource type="Script" uid="uid://c0idgpkpvf84y" path="res://scenes/customer.gd" id="1_ktfjk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v4oso"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_v4oso"]
+radius = 50.0
+
+[node name="Customer" type="CharacterBody2D" unique_id=883331261]
+script = ExtResource("1_ktfjk")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1234455079]
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0.67952013, 0.12717074, 0.13776171, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1173942830]
+shape = SubResource("RectangleShape2D_v4oso")
+
+[node name="InteractionZone" type="Area2D" parent="." unique_id=201419135]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionZone" unique_id=271001007]
+shape = SubResource("CircleShape2D_v4oso")

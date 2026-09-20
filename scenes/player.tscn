@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://oyly666bph1j"]
+
+[ext_resource type="Script" uid="uid://7gw6etuk6qf4" path="res://scenes/player.gd" id="1_3vyb7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v4oso"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_yxbtn"]
+radius = 50.0
+
+[node name="Player" type="CharacterBody2D" unique_id=2117404511]
+script = ExtResource("1_3vyb7")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1057214871]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=580704656]
+shape = SubResource("RectangleShape2D_v4oso")
+
+[node name="DetectionZone" type="Area2D" parent="." unique_id=1732448003]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionZone" unique_id=58441290]
+shape = SubResource("CircleShape2D_yxbtn")
+
+[connection signal="area_entered" from="DetectionZone" to="." method="_on_detection_zone_area_entered"]
+[connection signal="area_exited" from="DetectionZone" to="." method="_on_detection_zone_area_exited"]
