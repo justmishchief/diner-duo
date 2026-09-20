@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://dcr7hcq343qfw"]
+
+[ext_resource type="Script" uid="uid://rt3oth8n6xdh" path="res://scenes/shift_end_screen.gd" id="1_rk7nm"]
+
+[node name="ShiftEndScreen" type="Control" unique_id=88606589]
+process_mode = 2
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_rk7nm")
+
+[node name="Panel" type="Panel" parent="." unique_id=130106111]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TitleLabel" type="Label" parent="Panel" unique_id=2074434833]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="InfoLabel" type="Label" parent="Panel" unique_id=1669792015]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="SpeedUpgradeBtn" type="Button" parent="Panel" unique_id=202396755]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+text = "Buy Faster Shoes ($60)"
+
+[node name="CupcakeBtn" type="Button" parent="Panel" unique_id=1328159626]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+text = "Unlock Max's Cupcakes($150)"
+
+[node name="ContinueBtn" type="Button" parent="Panel" unique_id=700445912]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+text = "Next Shift
+"

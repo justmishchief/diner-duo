@@ -12,8 +12,12 @@ config_version=5
 
 config/name="Dinerduo"
 run/main_scene="uid://dsu2ongwwijxt"
-config/features=PackedStringArray("4.6", "Forward Plus")
+config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+GameManager="*uid://cno8ggyngeywx"
 
 [display]
 

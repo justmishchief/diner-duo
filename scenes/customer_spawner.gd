@@ -21,6 +21,7 @@ var archetypes = {
 var total_coins: int = 0
 
 func _ready():
+	GameManager.stats_updated.connect(update_money_ui)
 	update_money_ui()
 
 func update_money_ui():
@@ -28,6 +29,11 @@ func update_money_ui():
 		money_label.text = "Money: " + str(total_coins)
 
 func spawn_customer():
+	if not GameManager.is_shift_active:
+		return
+	if GameManager.cupcake_unlocked and not menu.has("Max's Cupcake"):
+		menu["Max's Cupcake"]= 120
+		
 	var archetype_keys = archetypes.keys()
 	var chosen = archetype_keys[randi() % archetype_keys.size()]
 	var data = archetypes[chosen]
@@ -49,12 +55,9 @@ func spawn_customer():
 	add_child(customer)
 
 func _on_customer_order_completed(amount: int, _mood: String):
-	total_coins += amount
-	update_money_ui()
-
+	GameManager.add_money(amount)
 func _on_customer_order_failed(penalty: int):
-	total_coins = max(0, total_coins - penalty)
-	update_money_ui()
+	GameManager.deduct_penalty(penalty)
 
 func _on_timer_timeout():
 	spawn_customer()

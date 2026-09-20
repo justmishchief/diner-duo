@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-const SPEED = 200.0
+const BASE_SPEED = 200.0
 var nearby_customer = null
 
 func _physics_process(_delta):
@@ -8,7 +8,9 @@ func _physics_process(_delta):
 	direction.x = Input.get_axis("ui_left", "ui_right")
 	direction.y = Input.get_axis("ui_up", "ui_down")
 	direction = direction.normalized()
-	velocity = direction * SPEED
+	
+	var current_speed = BASE_SPEED + (GameManager.player_speed_level - 1)* 45.0
+	velocity = direction * current_speed
 	move_and_slide()
 
 func _unhandled_input(event):
