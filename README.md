@@ -1,2 +1,2 @@
-# diner-duo
-diner co-op game for hack club third space
+# harvest
+Thirdspace game, made in godot
